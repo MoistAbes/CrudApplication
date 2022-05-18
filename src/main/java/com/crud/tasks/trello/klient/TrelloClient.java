@@ -44,6 +44,8 @@ public class TrelloClient {
 
     }
 
+
+
     private URI buildGetBoardsURL(){
 
         return UriComponentsBuilder.fromHttpUrl(trelloConfig.getTrelloApiEndpoint() + "/members/" + trelloConfig.getTrelloUsername() + "/boards")
