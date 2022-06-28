@@ -1,6 +1,8 @@
 package com.crud.tasks;
 
+import com.crud.tasks.service.DbService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 
@@ -10,9 +12,6 @@ import java.util.Arrays;
 
 @SpringBootTest
 class TasksApplicationTests {
-
-
-
 
 
 	@Test
@@ -27,10 +26,6 @@ class TasksApplicationTests {
 				.forEach(System.out::println);
 		System.out.println("<< ===== Beans list ====");
 	}
-
-
-
-
 
 
 	@Test

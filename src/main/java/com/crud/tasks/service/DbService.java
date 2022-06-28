@@ -11,8 +11,6 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-// adnotacja ta wytworzy nam konstruktor dla
-// wszystkich pól oznaczonych jako final
 public class DbService {
 
     private final TaskRepository repository;
@@ -22,9 +20,6 @@ public class DbService {
         return repository.findAll();
     }
 
-    public Task getTask(Long id){
-        return repository.findTaskById(id);
-    }
 
     public Task saveTask(final Task task){
         return repository.save(task);
@@ -34,7 +29,7 @@ public class DbService {
         repository.deleteById(taskId);
     }
 
-    public Task getTask2(final Long taskId) throws TaskNotFoundException {
+    public Task getTask(final Long taskId) throws TaskNotFoundException {
         return repository.findById(taskId).orElseThrow(TaskNotFoundException::new);
     }
 
