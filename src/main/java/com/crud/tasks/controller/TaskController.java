@@ -40,7 +40,7 @@ public class TaskController {
      */
     //kodilla
     @GetMapping(value = "{taskId}")
-    public ResponseEntity<TaskDto> getTask2(@PathVariable Long taskId) throws TaskNotFoundException{
+    public ResponseEntity<TaskDto> getTask(@PathVariable Long taskId) throws TaskNotFoundException{
         return ResponseEntity.ok(taskMapper.mapToTaskDto(service.getTask(taskId)));
     }
 
