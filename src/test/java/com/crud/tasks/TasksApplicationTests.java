@@ -14,18 +14,18 @@ import java.util.Arrays;
 class TasksApplicationTests {
 
 
-	@Test
-	void testContext() {
-		//Given
-		ApplicationContext context =
-				new AnnotationConfigApplicationContext("com.crud.tasks.controller");
-
-		//When & Then
-		System.out.println("===== Beans list: ==== >>");
-		Arrays.stream(context.getBeanDefinitionNames())
-				.forEach(System.out::println);
-		System.out.println("<< ===== Beans list ====");
-	}
+//	@Test
+//	void testContext() {
+//		//Given
+//		ApplicationContext context =
+//				new AnnotationConfigApplicationContext("com.crud.tasks.controller");
+//
+//		//When & Then
+//		System.out.println("===== Beans list: ==== >>");
+//		Arrays.stream(context.getBeanDefinitionNames())
+//				.forEach(System.out::println);
+//		System.out.println("<< ===== Beans list ====");
+//	}
 
 
 	@Test
