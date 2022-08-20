@@ -31,7 +31,7 @@ public class EmailScheduler {
             message += " tasks";
         }
 
-        simpleEmailService.send(
+        simpleEmailService.sendDaily(
                 new Mail(
                         adminConfig.getAdminMail(),
                         SUBJECT,
